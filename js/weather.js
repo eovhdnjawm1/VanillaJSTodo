@@ -19,10 +19,7 @@ function onGeoOk(position){
 		weatherContainer.innerText = `지금 날씨 : ${weather}`;
 		console.log(cityContainer.innerText)
 		console.log(weatherContainer.innerText)
-		// console.log(data.name, data.weather[0].main)
 	});
-	console.log(url);
-	// console.log(`내가 사는 곳 : ${url.weather}`)
 }
 
 
