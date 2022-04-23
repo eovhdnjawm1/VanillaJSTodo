@@ -1,12 +1,33 @@
 #main-container {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+#main-setion {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: white;
+	height: 90vh;
+	width: 50vw;
+	z-index: 99;
+	position: absolute;
+	background-color: rgb(71, 71, 71);
+	border-radius: 5%;
+	padding: 20px
+}
+
+#main-background {
+	position: absolute;
 	height: 100vh;
 	width: 100vw;
-
+	background-color: white;
+	opacity: 40%;
 }
 
 #main-title {
@@ -16,4 +37,60 @@
 
 .hidden {
 	display: none;
+}
+
+#todo-list {
+	list-style-type: none;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(71, 71, 71);
+	overflow-y: scroll;
+}
+
+#todo-list::-webkit-scrollbar {
+	display: none;
+}
+
+#todo-list li {
+	display: grid;
+
+	row-gap: 5px;
+	border-bottom: 1px solid #efefef;
+	margin-right: 25px;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
+
+}
+
+#todo-list li div {
+	margin-top: 15px;
+	font-size: 13px;
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+
+}
+
+#todo-list li span {
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+	display: inline-flex;
+	align-items: flex-end;
+}
+
+#todo-list li button {
+	grid-column: 4 / 4;
+	grid-row: 2 / 3;
+	width: 30px;
+	height: 30px;
+	border-radius: 15%;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	display: inline-flex;
+	align-items: center;
+	justify-self: right;
+	justify-content: center;
+
 }
