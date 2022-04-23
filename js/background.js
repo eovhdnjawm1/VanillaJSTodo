@@ -8,7 +8,6 @@ function changeBackground() {
 
 	background.style.background = `no-repeat url("img/${choseImage}")`;
 	background.style.backgroundSize = `cover`;
-	console.log(choseImage);
 }
 
 changeBackground();

@@ -4,9 +4,7 @@ const API_KEY = "6e0ef6ba01570f9f01e5c3bd07c7f021";
 function onGeoOk(position){
 	const lat = position.coords.latitude;
 	const lon = position.coords.longitude;
-	console.log("You live it", lat, lon);
 	const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
-	console.log(url);
 	fetch(url)
 	.then((res) => res.json())
 	.then((data) => {
@@ -17,8 +15,6 @@ function onGeoOk(position){
 
 		cityContainer.innerText = `현재 위치 : ${name}`;
 		weatherContainer.innerText = `지금 날씨 : ${weather}`;
-		console.log(cityContainer.innerText)
-		console.log(weatherContainer.innerText)
 	});
 }
 
