@@ -1,0 +1,15 @@
+#main-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#main-title {
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.hidden {
+	display: none;
+}
