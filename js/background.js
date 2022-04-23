@@ -6,7 +6,7 @@ function changeBackground() {
 	const choseImage = images[Math.floor(Math.random() * images.length)];
 	const background = document.querySelector("#main-container");
 
-	background.style.background = `no-repeat url("../img/${choseImage}")`;
+	background.style.background = `no-repeat url("img/${choseImage}")`;
 	background.style.backgroundSize = `cover`;
 	console.log(choseImage);
 }
